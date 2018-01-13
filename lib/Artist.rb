@@ -17,7 +17,7 @@ class Artist
     @@all
   end
 
-  def self.add_song(song)
+  def add_song(song)
     @songs<<song unless @songs.include?(song)
     song.artist = self
   end
