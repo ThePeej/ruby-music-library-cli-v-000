@@ -6,11 +6,11 @@ module Persistable
   end
 
   module ClassMethods
-    def self.destroy_all
+    def destroy_all
       self.all.clear
     end
 
-    def self.create(name)
+    def create(name)
       self.new(name).tap{|s| s.save}
     end
   end
