@@ -9,5 +9,9 @@ attr_accessor :name, :artist, :genre
     @genre = genre if genre
   end
 
+  def self.all
+    @@all
+  end
+
 
 end
