@@ -17,5 +17,9 @@ attr_accessor :name, :artist, :genre
     self.all.clear
   end
 
+  def save
+    self.class.all << self
+  end
+
 
 end
