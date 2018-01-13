@@ -14,4 +14,5 @@ module Persistable
       self.new(name).tap{|s| s.save}
     end
   end
+
 end
