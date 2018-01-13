@@ -1,4 +1,6 @@
 class Song
+  extend Persistable::ClassMethods
+  include Persistable::InstanceMethods
   attr_accessor :name, :artist, :genre
 
   @@all = []
