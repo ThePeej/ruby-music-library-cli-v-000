@@ -3,7 +3,8 @@ class Song
   include Persistable::InstanceMethods
 
 
-  attr_accessor :name, :artist, :genre
+  attr_accessor :name
+  attr_reader :artist, :genre
 
   @@all = []
 
@@ -17,5 +18,7 @@ class Song
   def self.all
     @@all
   end
+
+  def arist
 
 end
